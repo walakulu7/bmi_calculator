@@ -15,12 +15,54 @@ class _InputPageState extends State<InputPage> {
         backgroundColor: Color(0xFF141A3C),
         title: const Text('BMI CALCULATOR'),
       ),
-      body: Container(
-        color: Color(0xFF282C4F),
-        margin: EdgeInsets.all(15.0),
-        height: 200.0,
-        width: 170.0,
-      )
+      body: Column(
+        children: [
+          Expanded(child: Row(
+            children: [
+              Expanded(child: Container(
+                margin: EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  color: Color(0xFF282C4F),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              )),
+              Expanded(child: Container(
+                margin: EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  color: Color(0xFF282C4F),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              )),
+            ],
+          )),
+          Expanded(child: Container(
+            margin: EdgeInsets.all(15.0),
+            decoration: BoxDecoration(
+              color: Color(0xFF282C4F),
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+          )),
+          Expanded(child: Row(
+            children: [
+              Expanded(child: Container(
+                margin: EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  color: Color(0xFF282C4F),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              )),
+              Expanded(child: Container(
+                margin: EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  color: Color(0xFF282C4F),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              )),
+            ],
+          )),
+        ],
+      ),
     );
   }
 }
+
